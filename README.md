@@ -262,3 +262,22 @@ The visual style of chapter headings can be modified using the `titlesec` packag
         \includegraphics[width=0.75\textwidth]{minion}
 
 - Use a `-` to separate sort key from the prefixes, eg., `g-pi` denotes the Greek symbol `pi`.
+
+## Setup Visual Studio Code and Git integration on macOS
+
+        brew install mactex-no-gui
+        # Next command first updates the TeX Live Manager itself, and then (if successful) updates all LaTeX packages on your MacBook to the latest available versions.
+        sudo tlmgr update --self && sudo tlmgr update --all
+
+### Install LaTeX Workshop plugin from the Visual Studio Code Marketplace
+
+![LaTex](resources/LatexWorkshop.png)
+
+### Git integration
+
+        git init
+        # Add all your files to the repository
+        git add -A
+        git commit -m "Initial commit"
+        git remote add origin https://github.com/username/your_repository
+        git push -u origin master
