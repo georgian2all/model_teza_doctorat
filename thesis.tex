@@ -104,9 +104,12 @@
 \fi
 
 % ******************************** Front Matter ********************************
+% Print uppercase romanic character instead of lowercase which is not the
+% correct way of displaying
 \begin{document}
 
 \frontmatter
+\renewcommand{\thepage}{\Roman{page}}
 
 \maketitle
 \include{Instructions/instructions}
